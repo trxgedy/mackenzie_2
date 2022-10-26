@@ -21,3 +21,5 @@ Ao final do processamento individual dos pontos, o programa deve imprimir as seg
 • O ponto de menor distância em relação a origem translada e o valor da distância euclidiana.
 • O ponto de maior distância em relação a origem translada e o valor da distância euclidiana.
 Para Figura 2 abaixo, se o a origem é transladada para (1,-3) teríamos o seguinte plano cartesiano:
+
+![coords](https://user-images.githubusercontent.com/79763373/198126327-4008643e-d262-48cd-b7a5-6572831730e0.png)
