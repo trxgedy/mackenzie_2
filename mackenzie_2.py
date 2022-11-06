@@ -56,3 +56,22 @@ class Coordenadas:
     
 
 Coordenadas()
+
+'''
+Input:
+1 -3
+
+8
+
+#copiar todos as coords e colar de uma vez só
+
+5 4
+2 3
+-4 3
+-3 1
+-2 -1
+-5 -3
+4 -3
+2 -4
+
+'''
