@@ -19,15 +19,15 @@ class Coordenadas:
             x, y = [int(x) for x in input().split()]
 
             if x == self.cox or y == self.coy:
-                result = 'Coordenada ({},{}): Linha de Origem'.format(x,y)
+                result = f'Coordenada ({x},{y}): Linha de Origem'
             elif x > 0 and y > 0:
-                result = 'Coordenada ({},{}): Primeiro Quadrante'.format(x,y)
+                result = f'Coordenada ({x},{y}): Primeiro Quadrante'
             elif x < 0 and y > 0:
-                result = 'Coordenada ({},{}): Segundo Quadrante'.format(x,y)
+                result = f'Coordenada ({x},{y}): Segundo Quadrante'
             elif x < 0 and y < 0: 
-                result = 'Coordenada ({},{}): Terceiro Quadrante'.format(x,y)
+                result = f'Coordenada ({x},{y}): Terceiro Quadrante'
             else: 
-                result = 'Coordenada ({},{}): Quarto Quadrante'.format(x,y)
+                result = f'Coordenada ({x},{y}): Quarto Quadrante'
             
             #pitagoras
             euclid = float(((((x - self.cox)**2) + ((y - self.coy)**2)) **0.5))
