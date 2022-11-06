@@ -4,11 +4,7 @@ os.system('cls')
 
 class Coordenadas:
     def __init__(self):
-        coord_origin_x,coord_origin_y = [int(x) for x in input('Coordenada de origem: ').split()] 
-
-        #define as coordenadas x,y
-        self.cox = coord_origin_x
-        self.coy = coord_origin_y
+        self.cox, self.coy = [int(x) for x in input('Coordenada de origem: ').split()] 
 
         #Vai guardar as coordenadas e seus quadrantes correspondentes.
         resultados = []
@@ -37,9 +33,11 @@ class Coordenadas:
             euclid = float(((((x - self.cox)**2) + ((y - self.coy)**2)) **0.5))
 
             resultados.append(result)
+            
+            #Armazena os maiores e menores valores, junto com sua chave, que é sua própria coordenada
             euclidianos[str('({},{})'.format(x,y))] = euclid
 
-        #Armazena os maiores e menores valores, junto com sua chave, que é sua própria coordenada
+        #Pega o maior e menor valor, juntamente com suas chaves
         min_key = min(euclidianos, key=euclidianos.get)
         min_value = min(euclidianos.values())
 
