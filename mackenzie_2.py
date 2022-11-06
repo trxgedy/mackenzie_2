@@ -34,7 +34,7 @@ class Coordenadas:
 
             resultados.append(result)
             
-            #Armazena os maiores e menores valores, junto com sua chave, que é sua própria coordenada
+            #Armazena os valores euclidianos, junto com sua chave, que é sua própria coordenada
             euclidianos[str('({},{})'.format(x,y))] = euclid
 
         #Pega o maior e menor valor, juntamente com suas chaves
